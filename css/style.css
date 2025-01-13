@@ -1,0 +1,322 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.active {
+  /* background-color: #271b1b; */
+  background-color: rgba(25, 21, 29, 0.8);
+  color: white;
+}
+h1 {
+  color: darkgoldenrod;
+  font-family: "Unna", serif;
+  font-style: oblique;
+}
+h2 {
+  font-size: 1.2rem;
+  font-family: "Lily Script One", serif;
+  font-weight: 400;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+}
+.view-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #333;
+}
+.overlay {
+  background: url("/image/pexels-veeterzy-303383.jpg") no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(25, 21, 29, 0.8);
+}
+.resume {
+  position: absolute;
+  top: 2%;
+  left: 45%;
+  color: #ffff;
+  font-family: "Lily Script One", serif;
+  font-style: italic;
+  cursor: pointer;
+}
+.resume .highlight {
+  color: darkgoldenrod;
+}
+.text {
+  position: absolute;
+  color: aliceblue;
+  top: 60%;
+  left: 42%;
+  cursor: pointer;
+}
+
+.text h2 {
+  background-color: rgb(66, 60, 60);
+  border-radius: 10%;
+  font-size: 12px;
+  padding: 0.2rem;
+  text-align: center;
+}
+.profile-pic {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  height: 30vh;
+  width: 20%;
+}
+.profile-pic img {
+  border-radius: 70%;
+  height: 100%;
+  width: 100%;
+}
+.page-name {
+  position: absolute;
+  left: 0;
+  top: -4%;
+  padding: 1rem;
+  color: #ffff;
+  cursor: pointer;
+}
+.page-name .highlight {
+  color: darkgoldenrod;
+  font-style: oblique;
+}
+.downloadBtn {
+  position: absolute;
+  right: -5%;
+  top: 0;
+}
+.downloadBtn ul {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 0.5rem;
+}
+.downloadBtn ul li {
+  padding: 0.5rem;
+  list-style: none;
+  color: #ffff;
+  background-color: darkgoldenrod;
+  border-radius: 10px;
+}
+.downloadBtn a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.qoute {
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  padding: 10px;
+  width: 30%;
+  color: #ffff;
+  font-style: italic;
+  line-height: 1.2rem;
+}
+.qoute .highlight {
+  color: darkgoldenrod;
+}
+.nav {
+  position: absolute;
+  top: 85%;
+  right: 5%;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  list-style: none;
+  padding: 0.5rem;
+  list-style: none;
+  color: #ffff;
+  background-color: darkgoldenrod;
+  border-radius: 10px;
+  margin: 10px;
+}
+#career {
+  position: relative;
+  height: 100vh;
+}
+@import url("https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+#career h1 {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  font-size: 1.8rem;
+  color: darkgoldenrod;
+  font-family: "Unna", serif;
+  font-style: oblique;
+  padding: 20px;
+}
+#career .line {
+  background-color: darkgoldenrod;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 20px;
+  padding: 0.2px;
+  height: 2px;
+  width: 100px;
+}
+.career {
+  position: absolute;
+  font-family: "Unna", serif;
+  font-style: normal;
+  top: 15%;
+  left: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  /* margin: auto; */
+  width: 1000px;
+}
+.career-info {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+.career-info div {
+  display: flex;
+}
+#career .theme {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  display: flex;
+}
+.theme.active .mode1 {
+  display: block;
+}
+.theme .mode1 {
+  display: none;
+}
+.theme.active .mode2 {
+  display: none;
+}
+.theme .mode2 {
+  display: block;
+}
+#career .theme i {
+  border: 2px solid darkgoldenrod;
+  margin: 5px;
+  border-radius: 50%;
+}
+.profession li {
+  list-style: none;
+}
+.profession {
+  position: relative;
+  padding: 20px;
+  padding-top: 3rem;
+  margin: auto;
+  height: 80vh;
+  border: darkgoldenrod 3px solid;
+  border-radius: 20px;
+  width: 1000px;
+  font-family: "Unna", serif;
+  font-style: normal;
+  line-height: 1.8rem;
+}
+.profession h1 {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  color: darkgoldenrod;
+  font-family: "Unna", serif;
+  font-style: oblique;
+}
+.profession .line {
+  background-color: darkgoldenrod;
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  margin-top: 5px;
+  border-radius: 20px;
+  padding: 0.2px;
+  height: 2px;
+  width: 100px;
+}
+.Skills {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+.education {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+.hobby {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+}
+.language {
+  position: absolute;
+  top: 70%;
+  right: 25%;
+}
+.contact {
+  position: relative;
+  text-align: center;
+  margin: 5rem;
+  height: 80vh;
+  width: 800px;
+  font-family: "Unna", serif;
+  font-style: normal;
+}
+.contact-info {
+  background: url("/image/pexels-olly-842548.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  top: 5%;
+  left: 25%;
+  color: #ffff;
+  border-radius: 30px;
+}
+.contact-info h1 {
+  color: #ffff;
+}
+.contact form input {
+  position: relative;
+  margin: 1.5rem;
+  padding: 0.2rem;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.contact form textarea {
+  height: 100px;
+  width: 35%;
+  border-radius: 20px;
+  text-align: center;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+.contact .Btn {
+  background-color: darkgoldenrod;
+  color: #ffff;
+  border: 2px solid darkgoldenrod;
+  padding: 0.2rem;
+  width: 15%;
+}
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: -5%;
+  left: 70%;
+}

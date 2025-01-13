@@ -1,0 +1,104 @@
+.qoute {
+  display: none;
+}
+.page-name {
+  display: none;
+}
+body .view-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #333;
+}
+.view-page .resume {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  font-size: 0.8rem;
+}
+.view-page .downloadBtn {
+  position: absolute;
+  top: 80%;
+  right: 10%;
+}
+
+.view-page .nav {
+  position: absolute;
+  top: -1%;
+  right: 5%;
+}
+.view-page .profile-pic {
+  position: absolute;
+  top: 25%;
+  height: 20vh;
+  left: 40%;
+}
+.view-page .text {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+.view-page .nav ul li {
+  padding: 5px;
+  border-radius: 8px;
+  margin: 10px;
+}
+section#career {
+  height: 120vh;
+}
+#career .career {
+  line-height: 0.8rem;
+  display: block;
+}
+.career .career-info {
+  margin: 0;
+  font-size: 0.8rem;
+  width: 400px;
+}
+section.profession {
+  height: 150vh;
+  width: 400px;
+}
+.profession div h1 {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+.profession div .line {
+  position: absolute;
+  top: 5%;
+  left: 18%;
+}
+.profession .Skills {
+  position: absolute;
+  top: 8%;
+  left: 15%;
+}
+.profession .education {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+.profession .hobby {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+}
+.profession .language {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+.contact .contact-info {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 45%;
+}
+.contact .contact-info form input {
+  margin: 1rem;
+}
+.contact footer {
+  bottom: 0;
+  left: 15%;
+}
