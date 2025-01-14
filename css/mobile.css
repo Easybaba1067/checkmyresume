@@ -101,3 +101,7 @@ section.profession {
 #contact .contact form textarea {
   width: 80%;
 }
+section#contact {
+  margin: 0;
+  padding: 10px;
+}
