@@ -1,0 +1,107 @@
+.qoute {
+  display: none;
+}
+.page-name {
+  display: none;
+}
+.view-page .resume {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  font-size: 0.8rem;
+}
+.view-page .downloadBtn {
+  position: absolute;
+  top: 70%;
+  right: 4%;
+}
+
+.view-page .nav {
+  position: absolute;
+  top: -1%;
+  right: 5%;
+}
+.view-page .profile-pic {
+  position: absolute;
+  top: 25%;
+  height: 20vh;
+  left: 40%;
+}
+.view-page .text {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+.view-page .nav ul li {
+  padding: 5px;
+  border-radius: 8px;
+  margin: 10px;
+}
+.career .career-summary {
+  display: block;
+  max-width: 450px;
+  margin: auto;
+}
+section.career {
+  margin-top: 20px;
+  line-height: 1rem;
+  height: 165vh;
+}
+.career .career-wrap h1 {
+  font-size: 1.5rem;
+  margin: auto;
+}
+.career .career-wrap .line {
+  margin: auto;
+  margin-top: 5px;
+  height: 1.5px;
+  width: 50px;
+}
+.career .career-wrap .theme {
+  margin: auto;
+  font-weight: 50;
+}
+.career .career-wrap .theme i {
+  font-size: 2px;
+  font-weight: 50;
+}
+@media (min-width: 380px) {
+  section.career {
+    height: 118vh;
+  }
+  body section.profession {
+    height: 90vh;
+  }
+  #contact .contact .contact-info {
+    height: 60vh;
+  }
+  div.view-page .downloadBtn {
+    position: absolute;
+    top: 70%;
+    right: 9%;
+  }
+}
+section.profession {
+  max-width: 450px;
+  margin: auto;
+  padding: 3rem;
+  height: 120vh;
+}
+
+.profession .profession-wrap {
+  display: block;
+  margin-left: 3rem;
+}
+.contact .contact-info {
+  height: 80vh;
+}
+#contact .contact .Btn {
+  max-width: 30%;
+}
+#contact .contact form textarea {
+  width: 80%;
+}
+section#contact {
+  margin: 0;
+  padding: 10px;
+}
