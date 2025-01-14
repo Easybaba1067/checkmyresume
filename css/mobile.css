@@ -4,12 +4,6 @@
 .page-name {
   display: none;
 }
-body .view-page {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background: #333;
-}
 .view-page .resume {
   position: absolute;
   top: 0;
@@ -18,8 +12,8 @@ body .view-page {
 }
 .view-page .downloadBtn {
   position: absolute;
-  top: 80%;
-  right: 10%;
+  top: 70%;
+  right: 4%;
 }
 
 .view-page .nav {
@@ -36,69 +30,76 @@ body .view-page {
 .view-page .text {
   position: absolute;
   top: 45%;
-  left: 25%;
+  left: 20%;
 }
 .view-page .nav ul li {
   padding: 5px;
   border-radius: 8px;
   margin: 10px;
 }
-section#career {
-  height: 120vh;
+.career .career-summary {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  max-width: 450px;
+  margin: auto;
 }
-#career .career {
-  line-height: 0.8rem;
-  display: block;
+section.career {
+  margin-top: 20px;
+  line-height: 1rem;
+  height: 150vh;
 }
-.career .career-info {
-  margin: 0;
-  font-size: 0.8rem;
-  width: 400px;
+.career .career-wrap h1 {
+  font-size: 1.5rem;
+  margin: auto;
+}
+.career .career-wrap .line {
+  margin: auto;
+  margin-top: 5px;
+  height: 1.5px;
+  width: 50px;
+}
+.career .career-wrap .theme {
+  margin: auto;
+  font-weight: 50;
+}
+.career .career-wrap .theme i {
+  font-size: 2px;
+  font-weight: 50;
+}
+@media (min-width: 380px) {
+  section.career {
+    height: 118vh;
+  }
+  body section.profession {
+    height: 90vh;
+  }
+  #contact .contact .contact-info {
+    height: 60vh;
+  }
+  div.view-page .downloadBtn {
+    position: absolute;
+    top: 70%;
+    right: 9%;
+  }
 }
 section.profession {
-  height: 150vh;
-  width: 400px;
+  max-width: 450px;
+  margin: auto;
+  padding: 3rem;
+  height: 120vh;
 }
-.profession div h1 {
-  position: absolute;
-  top: 0;
-  left: 10%;
-}
-.profession div .line {
-  position: absolute;
-  top: 5%;
-  left: 18%;
-}
-.profession .Skills {
-  position: absolute;
-  top: 8%;
-  left: 15%;
-}
-.profession .education {
-  position: absolute;
-  top: 40%;
-  left: 15%;
-}
-.profession .hobby {
-  position: absolute;
-  top: 65%;
-  left: 20%;
-}
-.profession .language {
-  position: absolute;
-  top: 80%;
-  left: 20%;
+
+.profession .profession-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  margin-left: 3rem;
 }
 .contact .contact-info {
-  position: absolute;
-  top: 5%;
-  left: 0;
-  width: 45%;
+  height: 80vh;
 }
-.contact .contact-info form input {
-  margin: 1rem;
+#contact .contact .Btn {
+  max-width: 30%;
 }
-.contact footer {
-  bottom: 0;
-  left: 15%;
+#contact .contact form textarea {
+  width: 80%;
 }
