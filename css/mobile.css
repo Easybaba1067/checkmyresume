@@ -38,8 +38,7 @@
   margin: 10px;
 }
 .career .career-summary {
-  display: grid;
-  grid-template-columns: repeat(1, 2fr);
+  display: block;
   max-width: 450px;
   margin: auto;
 }
@@ -74,7 +73,7 @@ section.career {
     height: 90vh;
   }
   #contact .contact .contact-info {
-    height: 100vh;
+    height: 60vh;
   }
   div.view-page .downloadBtn {
     position: absolute;
@@ -90,12 +89,11 @@ section.profession {
 }
 
 .profession .profession-wrap {
-  display: grid;
-  grid-template-columns: repeat(1, 2fr);
+  display: block;
   margin-left: 3rem;
 }
 .contact .contact-info {
-  height: 100vh;
+  height: 80vh;
 }
 #contact .contact .Btn {
   max-width: 30%;
