@@ -249,7 +249,7 @@ a {
   font-style: normal;
 }
 .contact-info {
-  background: url("/image/pexels-olly-842548.jpg") no-repeat center center/cover;
+  background: url("/image/pexels-olly-842548.jpg") no-repeat center center/cover !important;
   max-width: 100%;
   color: #ffff;
   border-radius: 30px;
