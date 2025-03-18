@@ -295,18 +295,33 @@
               style="font-size: 2rem; padding: 10px; color: #ffff"
             ></i>
           </h1>
-          <form name="contact" netlify>
-            <label for="name">FULL NAME</label>
-            <input type="name" placeholder="Name" /><br />
-            <label for="phone number">PHONE</label>
-            <input type="phone number" placeholder="Phone number" /><br />
-            <label for="email">EMAIL</label>
-            <input type="email" placeholder="Email address" /><br />
-            <!-- <label for="message">MESSAGE</label> -->
-            <textarea name="text" id="message" placeholder="Message"></textarea
-            ><br />
-            <input class="Btn" type="submit" />
-          </form>
+          <div>
+            <form name="contact" netlify>
+              <div>
+                <label for="name">FULL NAME</label>
+                <input type="name" placeholder="Name" /><br />
+              </div>
+              <div>
+                <label for="phone number">PHONE</label>
+                <input type="phone number" placeholder="Phone number" /><br />
+              </div>
+              <div>
+                <label for="email">EMAIL</label>
+                <input type="email" placeholder="Email address" />
+              </div>
+              <br />
+              <!-- <label for="message">MESSAGE</label> -->
+              <div>
+                <textarea
+                  name="text"
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <br />
+              <button class="Btn" type="submit">send</button>
+            </form>
+          </div>
         </div>
         <footer>All reserved &copy 2024</footer>
       </div>
