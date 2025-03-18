@@ -277,12 +277,13 @@ form input:focus,
 form textarea:focus {
   outline: none;
 }
-.contact .Btn {
+button.Btn {
   background-color: darkgoldenrod;
   color: #ffff;
   border: 2px solid darkgoldenrod;
-  padding: 0.2rem;
+  padding: 0.5rem;
   max-width: 15%;
+  border-radius: 10px;
 }
 footer {
   text-align: center;

@@ -95,7 +95,7 @@ section.profession {
 .contact .contact-info {
   height: 80vh;
 }
-#contact .contact .Btn {
+#contact button.Btn {
   max-width: 30%;
 }
 #contact .contact form textarea {
