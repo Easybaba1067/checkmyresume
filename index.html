@@ -3,65 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Easyb Studio website development service"
+    />
+    <meta
+      name="keywords"
+      content="professional website developer, web
+  application, web development, responsive design, full-stack developer, build
+  user friendly websites, website developer, professional, business website,
+  company website,e-commerce website, school website, business website"
+    />
     <title>Oluwole Israel</title>
     <link
       rel="shortcut icon"
       href="/image/easybaba icon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" media="(max-width: 500px)" href="/css/mobile.css" />
+    <link rel="stylesheet" media="(max-width: 580px)" href="/css/mobile.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
-    </style>
   </head>
   <body>
     <div class="view-page">
       <div class="overlay"></div>
-      <div class="resume">
-        <h1><span class="highlight">My</span> Resume</h1>
-      </div>
-      <div class="text">
-        <h1>i'm Oluwole Israel</h1>
-        <h2>A Front-end website developer</h2>
-        <h2>UI/UX designer</h2>
-        <h2>application developer</h2>
-      </div>
-      <div class="profile-pic">
-        <img src="/image/IMG-20221106-WA0001.jpg" alt="profile" />
-      </div>
       <div class="page-name">
-        <h1><span class="highlight">Oluwole</span> Israel</h1>
+        <h1 class="name"><span class="highlight">Oluwole</span> Israel</h1>
+        <div class="resume">
+          <h1><span class="highlight">My</span> Resume</h1>
+        </div>
+        <div class="nav">
+          <ul>
+            <li>
+              <a class="navigator" href=".career">About me</a>
+            </li>
+            <li>
+              <a class="navigator" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="downloadBtn">
-        <ul>
-          <li><a href="/cv blue.pdf" download="cv blue">Download CV</a></li>
-        </ul>
+
+      <div class="text">
+        <div class="profile-pic">
+          <img src="/image/IMG-20221106-WA0001.jpg" alt="profile" />
+        </div>
+        <h1>i'm Oluwole Israel</h1>
+        <h2>Full-Stack website developer</h2>
+        <h2>web application developer</h2>
       </div>
       <div class="qoute">
-        <h2 class="highlight">You can count on me</h2>
-        <p>
-          <i class="bi bi-quote highlight"></i> "easyb Programs" blends
-          innovation and technology. With expertise in Python, JavaScript, HTML,
-          and CSS, i craft websites, develop mobile apps, and delve into the
-          realm of machine learning. Driven by passion, powered by code.
-        </p>
-      </div>
-      <div class="nav">
-        <ul>
-          <li>
-            <a class="navigator" href=".career">About me</a>
-          </li>
-          <li>
-            <a class="navigator" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <div class="qoute-text">
+          <h2 class="highlight">You can count on me</h2>
+          <p>
+            <i class="bi bi-quote highlight"></i> "easyb Programs" blends
+            innovation and technology. With expertise in Python, JavaScript,
+            HTML, and CSS, i craft websites, develop mobile apps, and delve into
+            the realm of machine learning. Driven by passion, powered by code.
+          </p>
+        </div>
+        <div class="downloadBtn">
+          <ul>
+            <li>
+              <a href="/Oluwole Isreal Olasunkanmi.pdf" download="cv blue"
+                >Download CV</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <section class="career">
       <div class="career-wrap">
         <h1>
@@ -81,27 +96,33 @@
       </div>
       <div class="career-summary">
         <div class="career-info">
-          <h2>Web development</h2>
-          <div>
+          <div class="career-flex">
+            <h2>Web development</h2>
             <i
               class="bi bi-laptop"
               style="font-size: 2rem; padding: 10px; color: darkgoldenrod"
             ></i>
+          </div>
+
+          <div>
             <p>
               As a website developer, i build and maintain websites using HTML,
-              CSS, and JavaScript. You ensure sites are user-friendly, visually
+              CSS, and JavaScript for font-end and nodejs, express.js EJS, APIs
+              for back-end. You ensure sites are user-friendly, visually
               appealing, and responsive. You work with designers and clients to
               create functional and accessible digital experiences.
             </p>
           </div>
         </div>
         <div class="career-info">
-          <h2>UI/UX designing</h2>
-          <div>
+          <div class="career-flex">
+            <h2>UI/UX designing</h2>
             <i
               class="bi bi-brush"
               style="font-size: 2rem; padding: 10px; color: darkgoldenrod"
             ></i>
+          </div>
+          <div>
             <p>
               As a UI/UX designer, i design user-friendly interfaces and enhance
               user experiences. i conduct research, create wireframes, and
@@ -112,12 +133,15 @@
           </div>
         </div>
         <div class="career-info">
-          <h2>App development</h2>
-          <div>
+          <div class="career-flex">
+            <h2>App development</h2>
+
             <i
               class="bi bi-code-slash"
               style="font-size: 2rem; padding: 10px; color: darkgoldenrod"
             ></i>
+          </div>
+          <div>
             <p>
               I design and build mobile applications for iOS and Android
               platforms. I code, test, and debug apps to ensure they are
@@ -127,17 +151,20 @@
           </div>
         </div>
         <div class="career-info">
-          <h2>Data science</h2>
-          <div>
+          <div class="career-flex">
+            <h2>Database</h2>
+
             <i
               class="bi bi-database"
               style="font-size: 2rem; padding: 10px; color: darkgoldenrod"
             ></i>
+          </div>
+          <div>
             <p>
-              As a data scientist, I analyze complex data to uncover patterns
-              and insights. I use statistical methods and machine learning
-              algorithms to make data-driven decisions. My work helps
-              organizations solve problems and optimize processes.
+              Designing, creating, and managing databases for efficient data
+              storage and retrieval. It includes planning, structuring tables,
+              ensuring security, and performing regular maintenance to support
+              performance and scalability.
             </p>
           </div>
         </div>
@@ -285,6 +312,76 @@
         </div>
       </div>
     </section>
+    <section class="testimonies">
+      <h1 class="highlight">Testimonies</h1>
+      <div class="testimonies-wrap">
+        <div class="testimony">
+          <div class="testimony-image">
+            <img
+              src="/image/Testimony/zbra-marketing-N4AK7Vy1McM-unsplash.jpg"
+              alt="gab"
+            />
+            <br />
+            <small>Anthony Johnson, CEO of Creative Minds </small>
+          </div>
+          <p>
+            <i
+              class="bi bi-chat-quote"
+              style="font-size: 3rem; margin: 2rem"
+            ></i
+            ><br />
+            "Easyb Studio transformed our online presence with a stunning
+            website that perfectly captures our brand's essence. Their team was
+            professional, responsive, and delivered exceptional results. We're
+            thrilled with our new website!"
+          </p>
+        </div>
+        <div class="testimony">
+          <div class="testimony-image">
+            <img
+              src="/image/Testimony/jadon-johnson-Jqy1EOYUqLA-unsplash.jpg"
+              alt="slav"
+            />
+            <br />
+            <small>Mark Davis, Founder of Tech Solutions </small>
+          </div>
+          <p>
+            <i
+              class="bi bi-chat-quote"
+              style="font-size: 3rem; margin: 2rem"
+            ></i
+            ><br />
+            "We were impressed by Easyb Studio's attention to detail and
+            commitment to quality. They built a website that exceeded our
+            expectations, and their support has been top-notch. We highly
+            recommend Easyb Studio for all your website development needs."
+          </p>
+        </div>
+
+        <div class="testimony">
+          <div class="testimony-image">
+            <img
+              src="/image/Testimony/rupinder-singh-jK9ZavfMu50-unsplash.jpg"
+              alt="prince"
+            />
+            <br />
+            <small>Emily Rodriguez, Owner of Blooming Designs</small>
+          </div>
+          <p>
+            <i
+              class="bi bi-chat-quote"
+              style="font-size: 3rem; margin: 2rem"
+            ></i
+            ><br />
+            "Easyb Studio's expertise in website development is unmatched. They
+            created a beautiful, user-friendly website for our business, and the
+            process was seamless. Their team is talented, friendly, and
+            dedicated to delivering outstanding results. We're so grateful for
+            their services!"
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="contact">
       <div class="contact">
         <div class="contact-info">
@@ -295,22 +392,33 @@
               style="font-size: 2rem; padding: 10px; color: #ffff"
             ></i>
           </h1>
-          <form name="contact" netlify>
-            <label for="name">FULL NAME</label>
-            <input type="name" placeholder="Name" /><br />
-            <label for="phone number">PHONE</label>
-            <input type="phone number" placeholder="Phone number" /><br />
-            <label for="email">EMAIL</label>
-            <input type="email" placeholder="Email address" /><br />
-            <!-- <label for="message">MESSAGE</label> -->
-            <textarea name="text" id="message" placeholder="Message"></textarea
-            ><br />
-            <input class="Btn" type="submit" />
-          </form>
+          <div>
+            <form name="contact" netlify>
+              <div>
+                <label for="name">FULL NAME</label>
+                <input type="name" placeholder="Name" /><br />
+              </div>
+              <div>
+                <label for="phone number">PHONE</label>
+                <input type="phone number" placeholder="Phone number" /><br />
+              </div>
+              <div>
+                <label for="email">EMAIL</label>
+                <input type="email" placeholder="Email address" />
+              </div>
+              <br />
+              <!-- <label for="message">MESSAGE</label> -->
+              <div>
+                <textarea id="message" placeholder="Message"></textarea>
+              </div>
+              <br />
+              <button class="Btn" type="submit">send</button>
+            </form>
+          </div>
         </div>
-        <footer>All reserved &copy 2024</footer>
       </div>
     </section>
+    <footer>All reserved &copy EasybStudio 2025</footer>
     <script src="script.js"></script>
   </body>
 </html>
