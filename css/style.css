@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
   overflow-x: hidden;
   margin: 0;
@@ -46,9 +45,7 @@ a {
   background-color: rgba(25, 21, 29, 0.8);
 }
 .resume {
-  position: absolute;
-  top: 2%;
-  left: 45%;
+  position: relative;
   color: #ffff;
   font-family: "Lily Script One", serif;
   font-style: italic;
@@ -58,61 +55,73 @@ a {
   color: darkgoldenrod;
 }
 .text {
-  position: absolute;
+  position: relative;
+  padding: 20px 40% 0;
   color: aliceblue;
-  top: 60%;
-  left: 42%;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .text h2 {
   background-color: rgb(66, 60, 60);
   border-radius: 10%;
   font-size: 12px;
-  padding: 0.2rem;
-  text-align: center;
-}
-.profile-pic {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  height: 30vh;
-  width: 20%;
+  padding: 5px;
 }
 .profile-pic img {
-  border-radius: 70%;
-  height: 100%;
-  width: 100%;
+  border-radius: 100%;
+  width: 50%;
 }
-.profile-pic img {
-  border-radius: 70%;
-  height: 100%;
-  width: 100%;
-}
+
 .page-name {
-  position: absolute;
-  left: 0;
-  top: -4%;
-  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  padding: 2px 5rem;
   color: #ffff;
+  grid-template-columns: 2fr 2fr 2fr;
   cursor: pointer;
+  display: grid;
+  width: 100%;
 }
 .page-name .highlight {
   color: darkgoldenrod;
   font-style: oblique;
 }
-.downloadBtn {
-  position: absolute;
-  right: -5%;
-  top: 0;
+
+.nav ul {
+  display: flex;
 }
-.downloadBtn ul {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
+.nav ul li {
   padding: 0.5rem;
+  list-style: none;
+  color: #ffff;
+  background-color: darkgoldenrod;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.qoute {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  color: #ffff;
+  font-style: italic;
+  line-height: 1.2rem;
+}
+.qoute-text {
+  width: 500px;
+  padding: 2rem;
+}
+.qoute .highlight {
+  color: darkgoldenrod;
+}
+.downloadBtn {
+  padding: 5rem 2rem 0;
 }
 .downloadBtn ul li {
-  padding: 0.5rem;
+  padding: 5px 10px;
   list-style: none;
   color: #ffff;
   background-color: darkgoldenrod;
@@ -122,54 +131,28 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-.qoute {
-  position: absolute;
-  top: 60%;
-  left: 2%;
-  padding: 10px;
-  width: 30%;
-  color: #ffff;
-  font-style: italic;
-  line-height: 1.2rem;
-}
-.qoute .highlight {
-  color: darkgoldenrod;
-}
-.nav {
-  position: absolute;
-  top: 85%;
-  right: 5%;
-}
-.nav ul {
-  display: flex;
-}
-.nav ul li {
-  list-style: none;
-  padding: 0.5rem;
-  list-style: none;
-  color: #ffff;
-  background-color: darkgoldenrod;
-  border-radius: 10px;
-  margin: 10px;
-}
-.career {
-  height: 100vh;
-  width: 100%;
-}
+
 .career-summary {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   max-width: 1000px;
   margin: auto;
+  padding: 0 0 2rem;
 }
 .career-info {
   margin: auto;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.1rem;
+  border: 1px solid darkgoldenrod;
+  border-radius: 20px;
+  margin: 1rem;
+}
+.career-flex {
+  display: flex;
 }
 .career-wrap h1 {
   font-size: 2rem;
-  margin-left: 10rem;
+  padding: 0px 10rem;
 }
 .career-wrap .line {
   background-color: darkgoldenrod;
@@ -177,7 +160,7 @@ a {
   border-radius: 20px;
   padding: 0.2px;
   height: 2px;
-  width: 100px;
+  width: 150px;
 }
 .career-wrap .theme {
   margin-right: 10rem;
@@ -237,10 +220,46 @@ a {
 .profession .headings {
   line-height: 2px;
 }
-#contact {
-  padding: 3rem;
-  margin: 10rem;
-  height: 70vh;
+.testimonies {
+  padding: 0 20rem 0;
+  overflow-x: hidden;
+  height: 400px;
+}
+.testimonies h1 {
+  border: 1px #333 solid;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 50%;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.testimonies-wrap {
+  display: flex;
+  position: relative;
+}
+
+.testimony {
+  display: flex;
+  border-radius: 20px;
+  padding: 1rem;
+  position: absolute;
+  border: 1px darkgoldenrod solid;
+}
+.testimony p {
+  margin: auto;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 500px;
+  text-align: center;
+}
+.testimony-image {
+  text-align: center;
+}
+.testimony-image img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
 }
 .contact {
   text-align: center;
@@ -267,6 +286,7 @@ a {
   border: 1px solid;
   border-radius: 5px;
 }
+
 .contact form textarea {
   height: 100px;
   width: 35%;
@@ -287,5 +307,84 @@ button.Btn {
 }
 footer {
   text-align: center;
-  margin: auto;
+  background-color: rgb(230, 206, 148);
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+  .overlay {
+    height: 70vh;
+  }
+  .page-name .name {
+    display: none;
+  }
+  .page-name {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    padding: 0 8rem 0 0;
+  }
+  .view-page {
+    height: 70vh;
+  }
+  section.testimonies {
+    padding: 0 10rem 0;
+    height: 600px;
+  }
+  div.testimony {
+    display: block;
+  }
+  div.testimony-image img {
+    height: 0%;
+    width: 100px;
+  }
+  .career .career-summary {
+    display: block;
+    max-width: 450px;
+    margin: auto;
+  }
+  section.career {
+    margin-top: 20px;
+    line-height: 1rem;
+  }
+  .career .career-wrap h1 {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  .career .career-wrap .line {
+    margin: auto;
+    margin-top: 5px;
+    height: 1.5px;
+    width: 50px;
+  }
+  .career .career-wrap .theme {
+    margin: auto;
+    font-weight: 50;
+  }
+  .career .career-wrap .theme i {
+    font-size: 2px;
+    font-weight: 50;
+  }
+  section.profession {
+    max-width: 450px;
+    margin: auto;
+    padding: 3rem;
+  }
+
+  .profession .profession-wrap {
+    display: block;
+    margin-left: 3rem;
+  }
+  #contact button.Btn {
+    max-width: 30%;
+  }
+  #contact .contact form textarea {
+    width: 50%;
+  }
+  section#contact {
+    padding: 0 10px;
+  }
 }
